@@ -9,8 +9,8 @@
   --color-foreground: #12463F;
   --color-card: #FFFFFF;
   --color-surface: #FAF8F5;
-  --color-accent: #E07A86;
-  --color-accent-hover: #F294A0;
+  --color-accent: #7A9CE0;
+  --color-accent-hover: #94B0F2;
   --color-highlight: #10B981;
   --color-muted: #F3F4F6;
   --color-muted-foreground: #6B7280;
@@ -40,8 +40,8 @@
 
   --color-highlight: #10B981;
   --color-surface: #FAF8F5;
-  --color-accent: #E07A86;
-  --color-accent-hover: #F294A0;
+  --color-accent: #7A9CE0;
+  --color-accent-hover: #94B0F2;
 }
 
 @layer base {
@@ -115,7 +115,7 @@
   }
 
   .animate-marquee {
-    animation: marquee 30s linear infinite;
+    animation: marquee 50s linear infinite;
   }
 
   .animation-delay-100 {
