@@ -78,7 +78,7 @@ export const Techstack = () => {
             <div className="absolute top-10 right-1/4 w-96 h-96 bg-(--color-primary)/5 rounded-full blur-3xl pointer-events-none" />
             <div className="absolute bottom-10 left-10 w-80 h-80 bg-(--color-accent)/8 rounded-full blur-3xl pointer-events-none" />
 
-            <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10 w-full">
+            <div className="max-w-6xl mx-auto px-6 sm:px-8 relative z-10 w-full">
                 {/* Section Header */}
                 <div className="text-center max-w-2xl mx-auto space-y-4 mb-12 sm:mb-14 animate-fade-in">
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-xs sm:text-sm font-semibold tracking-wider uppercase text-(--color-primary)">
@@ -127,7 +127,7 @@ export const Techstack = () => {
                 </div>
 
                 {/* 4 Quadrants / Cards Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 w-full">
                     {filteredCategories.map((category) => (
                         <div
                             key={category.id}

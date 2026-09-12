@@ -46,7 +46,7 @@ export const Hero = () => {
             <div className="absolute top-1/4 left-10 w-72 h-72 bg-(--color-primary)/5 rounded-full blur-3xl pointer-events-none" />
             <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-(--color-accent)/10 rounded-full blur-3xl pointer-events-none" />
 
-            <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10 w-full">
+            <div className="max-w-6xl mx-auto px-6 sm:px-8 relative z-10 w-full">
                 <div className="grid lg:grid-cols-12 gap-8 lg:gap-8 items-center">
                     {/* Left / Main Intro Section */}
                     <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-left order-2 lg:order-1">

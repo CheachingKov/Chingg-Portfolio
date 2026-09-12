@@ -60,7 +60,7 @@ export const ProfileCard = ({
   ],
 }) => {
   return (
-    <div className="relative w-full max-w-[320px] sm:max-w-[350px] lg:max-w-[340px] xl:max-w-[370px] mx-auto">
+    <div className="relative w-full max-w-[320px] sm:max-w-[350px] lg:max-w-[370px] mx-auto lg:ml-auto lg:mr-0">
       {/* Ambient background glow */}
       <div className="absolute -inset-1 bg-gradient-to-b from-(--color-primary)/20 to-(--color-accent)/25 rounded-[26px] blur-xl opacity-40 pointer-events-none" />
 
