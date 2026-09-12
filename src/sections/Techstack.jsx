@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Sparkles } from "lucide-react";
+import { CodeXml } from "lucide-react";
 
 import {
     SiFigma,
@@ -10,7 +10,7 @@ import {
     SiTypescript,
     SiReact,
     SiPython,
-    SiJsonwebtokens,
+    SiNodedotjs,
     SiExpress,
     SiMysql,
     SiGit,
@@ -39,7 +39,7 @@ const techCategories = [
         skills: [
             { name: "Java", icon: FaJava },
             { name: "Python", icon: SiPython },
-            { name: "JWT", icon: SiJsonwebtokens },
+            { name: "node.js", icon: SiNodedotjs },
             { name: "Express.js", icon: SiExpress },
         ],
     },
@@ -72,7 +72,7 @@ export const Techstack = () => {
     return (
         <section
             id="techstack"
-            className="relative py-20 lg:py-28 overflow-hidden bg-(--color-background)"
+            className="relative py-16 lg:py-20 overflow-hidden bg-(--color-background)"
         >
             {/* Ambient Background Glows */}
             <div className="absolute top-10 right-1/4 w-96 h-96 bg-(--color-primary)/5 rounded-full blur-3xl pointer-events-none" />
@@ -80,9 +80,9 @@ export const Techstack = () => {
 
             <div className="container mx-auto px-6 relative z-10">
                 {/* Section Header */}
-                <div className="text-center max-w-2xl mx-auto space-y-4 mb-12 sm:mb-16 animate-fade-in">
+                <div className="text-center max-w-2xl mx-auto space-y-4 mb-12 sm:mb-14 animate-fade-in">
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-xs sm:text-sm font-semibold tracking-wider uppercase text-(--color-primary)">
-                        <Sparkles className="w-3.5 h-3.5 text-(--color-accent)" />
+                        <CodeXml className="w-3.5 h-3.5 text-(--color-accent)" />
                         <span>Tech Stack</span>
                     </div>
 

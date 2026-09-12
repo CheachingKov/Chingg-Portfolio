@@ -1,4 +1,4 @@
-import Profile_Pic from "../assets/Profile_Pic.png";
+import Profile_Pic from "../assets/images/profile/Profile_Pic.png";
 
 const LinkedInIcon = (props) => (
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>

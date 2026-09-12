@@ -1,4 +1,7 @@
-import { Sparkles, ArrowUpRight } from "lucide-react";
+import { FolderGit2, ArrowUpRight } from "lucide-react";
+import Mindful_Study from "../assets/images/projectimg/Mindful_Study.png";
+import Domner from "../assets/images/projectimg/Domner.png";
+import SmartBudgetTracker from "../assets/images/projectimg/Smart-Budget_Tracker.png";
 
 const projectsData = [
     {
@@ -9,6 +12,7 @@ const projectsData = [
         gradient: "from-[#12463F]/15 via-[#7A9CE0]/20 to-[#E9E2D8]/40",
         previewBg: "bg-gradient-to-br from-[#12463F] to-[#1E6B61]",
         previewIcon: "📋",
+        image: Mindful_Study,
         liveUrl: "https://github.com/CheachingKov",
     },
     {
@@ -19,6 +23,7 @@ const projectsData = [
         gradient: "from-[#7A9CE0]/20 via-[#12463F]/10 to-[#FAF8F5]",
         previewBg: "bg-gradient-to-br from-[#1E3A8A] to-[#3B82F6]",
         previewIcon: "🏛️",
+        image: Domner,
         liveUrl: "https://github.com/CheachingKov",
     },
     {
@@ -29,16 +34,16 @@ const projectsData = [
         gradient: "from-[#10B981]/15 via-[#12463F]/10 to-[#E9E2D8]/30",
         previewBg: "bg-gradient-to-br from-[#065F46] to-[#059669]",
         previewIcon: "🛍️",
+        image: SmartBudgetTracker,
         liveUrl: "https://github.com/CheachingKov",
     },
-    
 ];
 
 export const Project = () => {
     return (
         <section
             id="projects"
-            className="relative py-20 lg:py-28 overflow-hidden bg-(--color-background)"
+            className="relative py-16 lg:py-20 overflow-hidden bg-(--color-background)"
         >
             {/* Ambient Background Glows */}
             <div className="absolute top-20 left-10 w-96 h-96 bg-(--color-primary)/5 rounded-full blur-3xl pointer-events-none" />
@@ -46,9 +51,9 @@ export const Project = () => {
 
             <div className="container mx-auto px-6 relative z-10">
                 {/* Section Header */}
-                <div className="text-center max-w-2xl mx-auto space-y-4 mb-12 sm:mb-16">
+                <div className="text-center max-w-2xl mx-auto space-y-4 mb-12 sm:mb-14">
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-xs sm:text-sm font-semibold tracking-wider uppercase text-(--color-primary)">
-                        <Sparkles className="w-3.5 h-3.5 text-(--color-accent)" />
+                        <FolderGit2 className="w-3.5 h-3.5 text-(--color-accent)" />
                         <span>Featured Projects</span>
                     </div>
                 </div>
@@ -67,30 +72,38 @@ export const Project = () => {
 
                             <div>
                                 {/* Project Card Visual Preview Window */}
-                                <div className="relative rounded-2xl overflow-hidden mb-6 border border-black/5 bg-slate-900/5 aspect-16/10 flex flex-col justify-between p-4 group-hover:border-black/10 transition-colors">
-                                    {/* Artwork / Project Showcase Illustration */}
-                                    <div
-                                        className={`absolute inset-0 ${project.previewBg} opacity-90 transition-transform duration-500 group-hover:scale-105 flex items-center justify-center`}
-                                    >
-                                        <div className="text-center p-6 text-white space-y-2">
-                                            <div className="text-4xl sm:text-5xl filter drop-shadow-md select-none transform transition-transform duration-300 group-hover:scale-110">
-                                                {project.previewIcon}
-                                            </div>
-                                            <p className="text-white/90 text-sm font-semibold tracking-wide uppercase text-shadow-sm">
-                                                {project.title}
-                                            </p>
-                                        </div>
-
-                                        {/* Subtle overlay grid decoration */}
-                                        <div
-                                            className="absolute inset-0 opacity-10 pointer-events-none"
-                                            style={{
-                                                backgroundImage:
-                                                    "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
-                                                backgroundSize: "16px 16px",
-                                            }}
+                                <div className="relative rounded-2xl overflow-hidden mb-6 border border-black/5 bg-slate-900/5 aspect-16/10 group-hover:border-black/10 transition-colors">
+                                    {project.image ? (
+                                        <img
+                                            src={project.image}
+                                            alt={project.title}
+                                            className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                                            loading="lazy"
                                         />
-                                    </div>
+                                    ) : (
+                                        <div
+                                            className={`absolute inset-0 ${project.previewBg} opacity-90 transition-transform duration-500 group-hover:scale-105 flex items-center justify-center p-4`}
+                                        >
+                                            <div className="text-center p-6 text-white space-y-2">
+                                                <div className="text-4xl sm:text-5xl filter drop-shadow-md select-none transform transition-transform duration-300 group-hover:scale-110">
+                                                    {project.previewIcon}
+                                                </div>
+                                                <p className="text-white/90 text-sm font-semibold tracking-wide uppercase text-shadow-sm">
+                                                    {project.title}
+                                                </p>
+                                            </div>
+
+                                            {/* Subtle overlay grid decoration */}
+                                            <div
+                                                className="absolute inset-0 opacity-10 pointer-events-none"
+                                                style={{
+                                                    backgroundImage:
+                                                        "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
+                                                    backgroundSize: "16px 16px",
+                                                }}
+                                            />
+                                        </div>
+                                    )}
                                 </div>
 
                                 {/* Project Title & Description */}
@@ -113,6 +126,7 @@ export const Project = () => {
                                     className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-(--color-primary) text-white text-xs sm:text-sm font-semibold hover:bg-(--color-primary)/90 shadow-sm hover:shadow-md transition-all duration-200"
                                 >
                                     <span>Live Demo</span>
+                                    <ArrowUpRight className="w-4 h-4" />
                                 </a>
                             </div>
                         </article>

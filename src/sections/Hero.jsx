@@ -41,7 +41,7 @@ const skills = [
 
 export const Hero = () => {
     return (
-        <section id="hero" className="relative min-h-screen flex items-center overflow-hidden pt-20 pb-12 lg:pt-22 lg:pb-16">
+        <section id="hero" className="relative min-h-screen flex items-center overflow-hidden pt-20 pb-16 lg:pt-24 lg:pb-20">
             {/* Subtle decorative background gradients */}
             <div className="absolute top-1/4 left-10 w-72 h-72 bg-(--color-primary)/5 rounded-full blur-3xl pointer-events-none" />
             <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-(--color-accent)/10 rounded-full blur-3xl pointer-events-none" />
@@ -116,7 +116,7 @@ export const Hero = () => {
                                     Projects built
                                 </h4>
                                 <p className="text-xs font-bold sm:text-sm text-(--color-muted-foreground) mt-1 leading-snug">
-                                    04
+                                    03
                                 </p>
                             </div>
                         </div>
