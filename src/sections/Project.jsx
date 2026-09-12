@@ -49,7 +49,7 @@ export const Project = () => {
             <div className="absolute top-20 left-10 w-96 h-96 bg-(--color-primary)/5 rounded-full blur-3xl pointer-events-none" />
             <div className="absolute bottom-20 right-10 w-96 h-96 bg-(--color-accent)/10 rounded-full blur-3xl pointer-events-none" />
 
-            <div className="container mx-auto px-6 relative z-10">
+            <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10 w-full">
                 {/* Section Header */}
                 <div className="text-center max-w-2xl mx-auto space-y-4 mb-12 sm:mb-14">
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-xs sm:text-sm font-semibold tracking-wider uppercase text-(--color-primary)">

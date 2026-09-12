@@ -41,15 +41,15 @@ const skills = [
 
 export const Hero = () => {
     return (
-        <section id="hero" className="relative min-h-screen flex items-center overflow-hidden pt-20 pb-16 lg:pt-24 lg:pb-20">
+        <section id="hero" className="relative min-h-screen flex items-center overflow-hidden pt-16 pb-12 lg:pt-20 lg:pb-16">
             {/* Subtle decorative background gradients */}
             <div className="absolute top-1/4 left-10 w-72 h-72 bg-(--color-primary)/5 rounded-full blur-3xl pointer-events-none" />
             <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-(--color-accent)/10 rounded-full blur-3xl pointer-events-none" />
 
-            <div className="container mx-auto px-6 relative z-10">
-                <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+            <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10 w-full">
+                <div className="grid lg:grid-cols-12 gap-8 lg:gap-8 items-center">
                     {/* Left / Main Intro Section */}
-                    <div className="lg:col-span-7 space-y-8 text-left order-2 lg:order-1">
+                    <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-left order-2 lg:order-1">
                         {/* Status Pill */}
                         <div className="animate-fade-in inline-block">
                             <span className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass text-sm font-medium text-(--color-primary)">
@@ -60,7 +60,7 @@ export const Hero = () => {
 
                         {/* Headline */}
                         <div className="space-y-4">
-                            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold tracking-tight text-(--color-foreground) leading-[1.15]">
+                            <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-(--color-foreground) leading-[1.15]">
                                 Crafting digital experiences with{" "}
                                 <span className="text-(--color-primary) font-serif italic font-normal glow-text block sm:inline">
                                     Code & Creativity
@@ -129,7 +129,7 @@ export const Hero = () => {
                 </div>
                 
                  {/* Skill tags */}
-                 <div className="mt-12 animate-fade-in animation-delay-600">
+                 <div className="mt-8 lg:mt-10 animate-fade-in animation-delay-600">
                      <p className="text-sm font-medium tracking-wide uppercase text-(--color-muted-foreground) mb-4 text-center">
                          Technologies I worked with
                      </p>
