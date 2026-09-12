@@ -33,7 +33,7 @@ export const Contact = () => {
     message: "",
   });
 
-  const emailAddress = "cheachingkov@gmail.com";
+  const emailAddress = "cheachingkov20@gmail.com";
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(emailAddress);
@@ -80,7 +80,7 @@ export const Contact = () => {
     },
     {
       name: "Telegram",
-      href: "https://t.me/CheachingKov",
+      href: "https://t.me/Cheaching_Kov",
       icon: TelegramIcon,
     },
   ];
@@ -141,7 +141,7 @@ export const Contact = () => {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="John Doe"
+                  placeholder="Ching Ching"
                   className="w-full px-4 py-3 sm:py-3.5 rounded-xl border border-(--color-border) bg-white/90 text-sm sm:text-base text-(--color-foreground) placeholder:text-(--color-muted-foreground)/60 focus:bg-white focus:border-(--color-primary) focus:ring-2 focus:ring-(--color-primary)/15 shadow-xs transition-all outline-none"
                 />
               </div>
@@ -161,7 +161,7 @@ export const Contact = () => {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="johndoe@gmail.com"
+                  placeholder="chingching@gmail.com"
                   className="w-full px-4 py-3 sm:py-3.5 rounded-xl border border-(--color-border) bg-white/90 text-sm sm:text-base text-(--color-foreground) placeholder:text-(--color-muted-foreground)/60 focus:bg-white focus:border-(--color-primary) focus:ring-2 focus:ring-(--color-primary)/15 shadow-xs transition-all outline-none"
                 />
               </div>

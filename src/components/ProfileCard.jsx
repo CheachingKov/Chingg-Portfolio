@@ -48,13 +48,13 @@ export const ProfileCard = ({
     {
       name: "Telegram",
       icon: TelegramIcon,
-      url: "https://t.me/CheachingKov",
+      url: "https://t.me/Cheaching_Kov",
       label: "Contact on Telegram",
     },
     {
       name: "Email",
       icon: MailIcon,
-      url: "mailto:[EMAIL_ADDRESS]",
+      url: "mailto:kovcheaching20@gmail.com",
       label: "Send an email",
     },
   ],
